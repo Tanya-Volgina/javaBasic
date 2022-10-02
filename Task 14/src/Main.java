@@ -55,7 +55,6 @@ public class Main {
             System.out.println("Модуль большего числа: " + absMaxNumber);
         } else {
             System.out.println("Модули равны");
-
         }
     }
 }
