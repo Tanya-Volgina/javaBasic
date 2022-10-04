@@ -24,12 +24,12 @@ public class Main {
                 showClue();
             } else if (attempt > 1) {
                 System.out.println("Подумай еще!");
+                attempt--;
+            } else {
+                System.out.println("Обидно, приходи в другой раз");
+                attempt--;
             }
-
-            attempt--;
         }
-
-        System.out.println("Обидно, приходи в другой раз");
     }
 
     private static String getInput(Scanner in) {
@@ -42,8 +42,8 @@ public class Main {
     private static void showClue() {
         if (attempt == 3) {
             System.out.println(riddle.Clue);
-            attempt = 2;
-        } else if (attempt > 1) {
+            attempt = 1;
+        } else {
             System.out.println("Подсказка уже недоступна");
         }
     }

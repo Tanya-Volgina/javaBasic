@@ -7,6 +7,8 @@ public class Main {
 
         System.out.print("Введите количество строк: ");
         int quantity = in.nextInt();
+        in.nextLine();
+
         if (quantity <= 0){
             System.out.println("Введено не верное количество строк");
             return;
@@ -23,7 +25,7 @@ public class Main {
         System.out.println("Введите строки");
         for (int i = 0; i < quantity; i++) {
             System.out.print(i + 1 + " строка: ");
-            strArray[i] = in.next();
+            strArray[i] = in.nextLine();
         }
 
         return strArray;
